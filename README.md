@@ -1,4 +1,4 @@
-# x-article-ai-Workflow
+# x-article-ai-workflow
 
 全自动 X（Twitter）文章生成工作流，基于 AI 实现热点话题抓取、筛选、双风格内容创作全流程自动化。
 
