@@ -1,0 +1,37 @@
+{
+  "name": "defou-workflow-agent",
+  "version": "1.0.0",
+  "description": "Automated content creation workflow based on Defou methodology",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "skill:tophub": "export NODE_PATH=./node_modules && ts-node --project tsconfig.json ./skills/tophub-trends/tophub.ts",
+    "skill:master": "ts-node src/master.ts",
+    "skill:list": "export NODE_PATH=./node_modules && ts-node --project tsconfig.json ./skills/article-list-processor/index.ts",
+    "skill:local": "export NODE_PATH=./node_modules && ts-node --project tsconfig.json ./skills/local-file-rewriter/index.ts",
+    "skill:witty": "export NODE_PATH=./node_modules && ts-node --project tsconfig.json ./skills/witty-humor-style/index.ts",
+    "migrate:outputs": "ts-node scripts/migrate-outputs.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.33.1",
+    "@mozilla/readability": "^0.6.0",
+    "cheerio": "^1.1.2",
+    "chokidar": "^5.0.0",
+    "dotenv": "^16.4.7",
+    "jsdom": "^27.4.0",
+    "node-fetch": "^2.7.0",
+    "p-limit": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/chokidar": "^1.7.5",
+    "@types/jsdom": "^27.0.0",
+    "@types/node": "^22.10.2",
+    "@types/node-fetch": "^2.6.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
