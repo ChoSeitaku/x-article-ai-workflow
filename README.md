@@ -1,6 +1,11 @@
-# Defou Workflow Agent
+# x-article-ai-Workflow
 
-一个全自动化的内容创作流水线，从热点发现到爆款验证的零人工干预系统。
+全自动 X（Twitter）文章生成工作流，基于 AI 实现热点话题抓取、筛选、双风格内容创作全流程自动化。
+
+本项目由 `defou-workflow-agent` 改造而来，核心更新：
+- 信息源从 `TopHub` 切换为 `AIbase 每日资讯`（https://news.aibase.com/zh/daily），聚焦 AI 领域前沿动态
+- 支持 Claude 系列模型中转调用，自动筛选高潜力话题，生成「Defou x Stanley」双风格+睿智幽默的推文长文
+- 一键式流水线：热点抓取 → AI 筛选 → 内容生成 → 可直接发布的 X Articles 格式输出
 
 ## 🆕 最新更新
 
